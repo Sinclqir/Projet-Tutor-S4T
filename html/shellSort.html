@@ -1,0 +1,113 @@
+<!--
+  Copyright (C) 2022 Sinclair BALIVET, Antoine BONDET, Yves-Robert ESTRADA, Quentin MARCHAL, Pierre SAVE et Siham TABBAA
+
+  This file is part of ComparaisonTri.
+
+  ComparaisonTri is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+  ComparaisonTri is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with ComparaisonTri. If not, see <https://www.gnu.org/licenses/>. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/styleTri.css" />
+    <title>Shell-Sort</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script defer="defer" src="../js/shellsort.js"></script>
+</head>
+<body>
+
+<!-- Titre et texte : DEBUT -->
+
+<h1 class="titlePos">Shell Sort</h1>
+<p class="textPos">le tri shell est principalement une variante de Insertion Sort, c'est une amélioration de ce dernier. il trie d'abord les éléments éloignés les uns des autres et réduit successivement l'intervalle entre les éléments à trier.
+    Il est facile de comprendre intuitivement comment fonctionne cet algorithme mais il est difficile de calculer son temps d'exécution.
+</p>
+<section>
+    <ul> complexité
+        <li style="padding-top: 20px"> Temps d'exécution dans le pire des cas	: O(n^2)</li>
+        <li> Temps d'exécution de la bulle dans le meilleur des cas : O(nlog(n))</li>
+        <li> Temps d'exécution moyen du cas de la bulle : O(n(log(n))^2) </li>
+    </ul>
+</section>
+
+<!-- Titre et texte : Fin -->
+
+<!-- Barre de navigation : DEBUT -->
+<nav>
+    <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="compare.html">Comparaison Tris</a>
+        </li>
+        <li><a href="algo.html">Algorithme</a>
+            <ul>
+                <li>
+                    <a href="insertSort.html#1B">Insert-sort</a>
+                </li>
+                <li>
+                    <a href="mergeSort.html#1C">Merge-Sort</a>
+                </li>
+                <li>
+                    <a href="quickSort.html#1D">Quick-Sort</a>
+                </li>
+                <li>
+                    <a href="selectSort.html#1E">Select-sort</a>
+                </li>
+                <li class="active_navbar">
+                    <a href="shellSort.html#1E">Shell-sort</a>
+                </li>
+                <li>
+                    <a href="heapSort.html#1E">Heap-sort</a>
+                </li>
+                <li>
+                    <a href="bubbleSort.html#1E">Bubble-sort</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="credits.html">Crédits</a></li>
+    </ul>
+</nav>
+<!-- Barre de navigation : FIN -->
+
+<!-- Tableau des parametres : DEBUT -->
+
+<div id="tabData">
+    <div id="firstline">
+        <div class="col">
+            <label id="salut" for="size"> Taille </label> <input class="textInput" type="number" id="size" value="5" min="5" max="10000" name="choices" required>
+            <span class="validity"></span>
+        </div>
+        <div class="col">
+            <label for="speed"> Vitesse </label> <input class="textInput" type="number" id="speed" value="0" name="choices" min="0" max="60" required>
+            <span class="validity"></span>
+        </div>
+    </div>
+    <div id="secondline">
+        <input  type="radio" id="choice1" value="random" name="choices" checked> <label class="textInput" for="choice1">Aléatoire</label>
+        <input type="radio" id="choice2" value="best" name="choices"> <label class="textInput" for="choice2">Meilleur situation</label>
+        <input type="radio" id="choice3" value="worst" name="choices"> <label class="textInput" for="choice3">Pire situation</label>
+    </div>
+    <div>
+        <button id="submit" type="submit">Envoyer</button>
+        <div id="error"></div>
+    </div>
+</div>
+
+<!-- Tableau des parametres : Fin -->
+
+<!-- Affichage graphique : Debut -->
+
+<div id="chartPos" class="centerGraph" style="display: none;" >
+    <canvas id="chart"></canvas>
+</div>
+<!-- Affichage graphique : Fin -->
+<div id="license"><a href="https://www.gnu.org/licenses/">Site web sous licence GNU/GPL</a></div>
+</body>
+
+</html>
