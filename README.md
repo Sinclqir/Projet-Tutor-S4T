@@ -7,12 +7,12 @@ C'est-à-dire une comparaison de la rapidité de l'exécution et l'efficacité d
 #Pour pouvoir naviguer sur notre site web, l’utilisateur doit se connecter au VPN avec ses identifiants unice. Ce dernier pourra alors rentrer ou cliquer sur le lien suivant : http://10.22.27.5/projet_tut/  (le lien n'est plus fonctionnel) .
 #Arrivé sur le site, il va pouvoir voir un menu de navigation se trouvant sur la gauche. Ce menu lui permettra de circuler sur les pages suivantes :
 #•    Accueil
-•    Comparaison Tris
-•    Algorithme
-•    Conclusion
-•    Sources
-•    Crédits
-Lorsque la case « algorithme » du menu sera survolée, un sous-menu apparaîtra montrant les différents algorithmes de tri qu’il est possible de découvrir. 
+#•    Comparaison Tris
+#•    Algorithme
+#•    Conclusion
+#•    Sources
+#•    Crédits
+#Lorsque la case « algorithme » du menu sera survolée, un sous-menu apparaîtra montrant les différents algorithmes de tri qu’il est possible de découvrir. 
 Lorsque l’on clique sur la page d’un algorithme de tri, un formulaire nous est présenté. Après avoir envoyé le formulaire grâce au bouton Envoyer, un graphe animé ainsi qu'un tableau de résultat s'affiche. 
 
 
