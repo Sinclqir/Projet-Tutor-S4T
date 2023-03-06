@@ -28,9 +28,10 @@ Lorsque l’on clique sur la page d’un algorithme de tri, un formulaire nous e
 #Auteurs
 Maquette et Visuel:
 - Antoine BONDET
+- Sinclair BALIVET
 
 Gestion des algorithmes:
-- Sinclair Balivet
+- Quentin MARCHAL
 - Yves-Robert ESTRADA
 
 Recherches et animations:
